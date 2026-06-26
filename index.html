@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Happy Birthday Maa - A heartfelt birthday surprise for Lata Mehta from her loving son Atharv">
+    <title>Happy Birthday Maa 🎂 | Lata Mehta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PRELOADER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="heart-loader">
+                <svg viewBox="0 0 100 100" class="heart-svg">
+                    <path d="M50 88 C25 65, 0 45, 0 28 C0 10, 15 0, 28 0 C38 0, 46 6, 50 15 C54 6, 62 0, 72 0 C85 0, 100 10, 100 28 C100 45, 75 65, 50 88Z" fill="url(#heartGrad)"/>
+                    <defs>
+                        <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e8a0b4"/>
+                            <stop offset="100%" style="stop-color:#b76e79"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <p class="preloader-text">Preparing a surprise for <span class="highlight-text">Maa</span>...</p>
+            <div class="loading-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- MUSIC TOGGLE -->
+    <!-- ═══════════════════════════════════════════ -->
+    <button id="music-toggle" class="music-btn" aria-label="Toggle music">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FLOATING PETALS CONTAINER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div id="petals-container" class="petals-container"></div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+        
+        <div class="hero-content">
+            <div class="decorative-line top-line"></div>
+            
+            <p class="hero-subtitle animate-on-scroll" data-animation="fadeUp">✨ A Special Surprise For ✨</p>
+            
+            <h1 class="hero-title animate-on-scroll" data-animation="scaleIn">
+                <span class="cursive-name">Lata Mehta</span>
+            </h1>
+            
+            <div class="hero-divider">
+                <span class="divider-flower">🌺</span>
+            </div>
+            
+            <h2 class="hero-wish animate-on-scroll" data-animation="fadeUp">
+                <span class="wish-line">Happy Birthday</span>
+                <span class="wish-line hindi-wish">जन्मदिन मुबारक, माँ!</span>
+            </h2>
+            
+            <div class="hero-age animate-on-scroll" data-animation="scaleIn">
+                <span class="age-text">Celebrating</span>
+                <span class="age-number">48</span>
+                <span class="age-text">Beautiful Years</span>
+            </div>
+            
+            <div class="hero-date animate-on-scroll" data-animation="fadeUp">
+                <span>🎂 30th June 2026 🎂</span>
+            </div>
+
+            <a href="#countdown" class="scroll-down-btn">
+                <span class="scroll-arrow"></span>
+            </a>
+            
+            <div class="decorative-line bottom-line"></div>
+        </div>
+
+        <!-- Decorative floating elements -->
+        <div class="floating-elements">
+            <span class="float-element" style="--delay: 0s; --x: 10%; --size: 2rem;">🌸</span>
+            <span class="float-element" style="--delay: 1.5s; --x: 25%; --size: 1.5rem;">✨</span>
+            <span class="float-element" style="--delay: 3s; --x: 75%; --size: 2.5rem;">🌺</span>
+            <span class="float-element" style="--delay: 0.8s; --x: 85%; --size: 1.8rem;">💕</span>
+            <span class="float-element" style="--delay: 2.2s; --x: 50%; --size: 2rem;">🌷</span>
+            <span class="float-element" style="--delay: 4s; --x: 15%; --size: 1.6rem;">🪷</span>
+            <span class="float-element" style="--delay: 1s; --x: 90%; --size: 2.2rem;">🌹</span>
+            <span class="float-element" style="--delay: 3.5s; --x: 40%; --size: 1.4rem;">💫</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- COUNTDOWN SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="countdown" class="countdown-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll" data-animation="fadeUp">
+                <span class="section-tag">⏰ The Moment is Near</span>
+                <h2 class="section-title">Countdown to Her Special Day</h2>
+                <p class="section-subtitle hindi-text">उस ख़ास लम्हे तक का सफ़र</p>
+            </div>
+
+            <div class="countdown-timer" id="countdown-timer">
+                <div class="countdown-item animate-on-scroll" data-animation="scaleIn">
+                    <div class="countdown-glass">
+                        <span class="countdown-number" id="days">00</span>
+                    </div>
+                    <span class="countdown-label">Days / दिन</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item animate-on-scroll" data-animation="scaleIn">
+                    <div class="countdown-glass">
+                        <span class="countdown-number" id="hours">00</span>
+                    </div>
+                    <span class="countdown-label">Hours / घंटे</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item animate-on-scroll" data-animation="scaleIn">
+                    <div class="countdown-glass">
+                        <span class="countdown-number" id="minutes">00</span>
+                    </div>
+                    <span class="countdown-label">Minutes / मिनट</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item animate-on-scroll" data-animation="scaleIn">
+                    <div class="countdown-glass">
+                        <span class="countdown-number" id="seconds">00</span>
+                    </div>
+                    <span class="countdown-label">Seconds / सेकंड</span>
+                </div>
+            </div>
+
+            <p class="countdown-message animate-on-scroll" data-animation="fadeUp" id="countdown-message">
+                Every second brings us closer to celebrating the most wonderful person in the world 💕
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- TRIBUTE SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="tribute" class="tribute-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll" data-animation="fadeUp">
+                <span class="section-tag">👑 Our Queen</span>
+                <h2 class="section-title">The Woman Who Made Us Who We Are</h2>
+                <p class="section-subtitle hindi-text">वो औरत जिसने हमें वो बनाया जो हम हैं</p>
+            </div>
+
+            <div class="tribute-content">
+                <div class="tribute-card animate-on-scroll" data-animation="fadeLeft">
+                    <div class="tribute-icon">🌟</div>
+                    <h3>A Mother's Love</h3>
+                    <p class="hindi-text">माँ का प्यार — दुनिया की सबसे शुद्ध और अनमोल चीज़।</p>
+                    <p>A love so pure, so unconditional, that words could never do it justice. You have been our guiding light through every storm.</p>
+                </div>
+                <div class="tribute-card animate-on-scroll" data-animation="fadeUp">
+                    <div class="tribute-icon">💪</div>
+                    <h3>Our Strength</h3>
+                    <p class="hindi-text">आपकी ताकत ने हमें हर मुश्किल से लड़ना सिखाया।</p>
+                    <p>Behind every achievement of ours, there's your silent sacrifice, your endless prayers, and your unwavering belief in us.</p>
+                </div>
+                <div class="tribute-card animate-on-scroll" data-animation="fadeRight">
+                    <div class="tribute-icon">🏠</div>
+                    <h3>Our Home</h3>
+                    <p class="hindi-text">आप जहाँ हैं, वहीं हमारा घर है।</p>
+                    <p>Home isn't a place — it's wherever you are. Your warmth, your laughter, your cooking — that's what makes a house a home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- MEMORIES / PHOTO GALLERY SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="memories" class="memories-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll" data-animation="fadeUp">
+                <span class="section-tag">📸 Precious Moments</span>
+                <h2 class="section-title">Our Memory Lane</h2>
+                <p class="section-subtitle hindi-text">यादों की गलियों में एक सफ़र</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card animate-on-scroll" data-animation="fadeUp">
+                    <div class="card-inner">
+                        <div class="card-image-wrapper">
+                            <img src="images/photo1.jpg" alt="Atharv and Maa at festival" class="gallery-image" loading="lazy">
+                            <div class="card-overlay">
+                                <span class="overlay-icon">💕</span>
+                            </div>
+                        </div>
+                        <div class="card-caption">
+                            <h3>साथ में त्योहार 🎉</h3>
+                            <p>Celebrating traditions together — the most beautiful feeling</p>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll" data-animation="fadeUp" style="--delay: 0.2s">
+                    <div class="card-inner">
+                        <div class="card-image-wrapper">
+                            <img src="images/photo2.jpg" alt="Family celebration with Maa" class="gallery-image" loading="lazy">
+                            <div class="card-overlay">
+                                <span class="overlay-icon">🪔</span>
+                            </div>
+                        </div>
+                        <div class="card-caption">
+                            <h3>परिवार का प्यार 🏡</h3>
+                            <p>Family moments that become forever memories</p>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll" data-animation="fadeUp" style="--delay: 0.4s">
+                    <div class="card-inner">
+                        <div class="card-image-wrapper">
+                            <img src="images/photo3.jpg" alt="Fun outing with Maa" class="gallery-image" loading="lazy">
+                            <div class="card-overlay">
+                                <span class="overlay-icon">🌿</span>
+                            </div>
+                        </div>
+                        <div class="card-caption">
+                            <h3>माँ के साथ सैर 🌳</h3>
+                            <p>Adventures are always better with you, Maa</p>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- LOVE LETTER / EMOTIONAL MESSAGE SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="message" class="message-section">
+        <div class="message-bg-decoration">
+            <div class="bg-mandala"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header animate-on-scroll" data-animation="fadeUp">
+                <span class="section-tag">💌 From the Heart</span>
+                <h2 class="section-title">A Letter to My Maa</h2>
+                <p class="section-subtitle hindi-text">दिल से एक ख़त माँ के नाम</p>
+            </div>
+
+            <div class="letter-container animate-on-scroll" data-animation="scaleIn">
+                <div class="letter-paper">
+                    <div class="letter-stamp">💕</div>
+                    <div class="letter-header">
+                        <span class="letter-greeting">प्रिय माँ,</span>
+                    </div>
+                    
+                    <div class="letter-body" id="letter-body">
+                        <p class="letter-line hindi-text">
+                            माँ, आपने मुझे सिर्फ ज़िन्दगी नहीं दी — आपने मुझे ज़िन्दगी जीने का तरीका सिखाया। 
+                            हर सुबह आपकी आवाज़ से जो दिन शुरू होता था, वो दुनिया की सबसे प्यारी अलार्म थी। 🌅
+                        </p>
+                        <p class="letter-line">
+                            Mom, you didn't just give me life — you taught me how to live it. 
+                            Every morning that started with your voice was the sweetest alarm clock in the world.
+                        </p>
+                        
+                        <p class="letter-line hindi-text">
+                            आपकी हर मुस्कान में मेरा पूरा संसार बसता है। 
+                            जब दुनिया ने मुझसे कहा "तू नहीं कर सकता," तब आपने कहा "मेरा बेटा सब कर सकता है।" 
+                            वो भरोसा, माँ — वो मेरी सबसे बड़ी ताकत है। 💪
+                        </p>
+                        <p class="letter-line">
+                            My entire world resides in your smile. 
+                            When the world told me "you can't do it," you said "my son can do anything." 
+                            That faith, Maa — that is my greatest strength.
+                        </p>
+
+                        <p class="letter-line hindi-text">
+                            आप सिर्फ मेरी माँ नहीं हो — आप मेरी पहली दोस्त हो, पहली गुरु हो, 
+                            मेरी सबसे बड़ी supporter हो, और मेरी ज़िन्दगी की सबसे ख़ूबसूरत इंसान हो। 🌹
+                        </p>
+                        <p class="letter-line">
+                            You're not just my mother — you're my first friend, my first teacher, 
+                            my biggest supporter, and the most beautiful person in my life.
+                        </p>
+
+                        <p class="letter-line hindi-text">
+                            आपके हाथ का खाना, आपकी डाँट, आपकी लोरी, आपका इंतज़ार — 
+                            ये सब चीज़ें दुनिया की किसी भी दौलत से ज़्यादा कीमती हैं। 
+                            मैं चाहे कितना भी बड़ा हो जाऊँ, आपकी गोद में तो हमेशा छोटा ही रहूँगा। 👶
+                        </p>
+                        <p class="letter-line">
+                            Your cooking, your scolding, your lullabies, your waiting at the door — 
+                            these are more precious than all the wealth in the world. 
+                            No matter how old I grow, in your lap, I'll always be your little child.
+                        </p>
+
+                        <p class="letter-line hindi-text highlight-letter">
+                            48 साल की इस ख़ूबसूरत ज़िन्दगी में आपने जो प्यार बाँटा है — 
+                            वो किसी समुंदर से कम नहीं। 🌊
+                            <br><br>
+                            जन्मदिन मुबारक हो, माँ! 🎂🎉
+                            <br>
+                            भगवान आपको हज़ार साल की उम्र दे, 
+                            ढेर सारी ख़ुशियाँ दे, और हमेशा आपके चेहरे पर मुस्कान रहे। 🙏
+                        </p>
+                        <p class="letter-line highlight-letter">
+                            In these 48 beautiful years, the love you've shared is nothing less than an ocean.
+                            <br><br>
+                            Happy Birthday, Maa! 🎂🎉
+                            <br>
+                            May God bless you with a thousand years, endless happiness, 
+                            and may your face always carry that beautiful smile. 🙏
+                        </p>
+                    </div>
+
+                    <div class="letter-footer">
+                        <p class="letter-sign-hindi">आपका हमेशा,</p>
+                        <p class="letter-sign">Forever yours,</p>
+                        <p class="letter-signature">Atharv 💕</p>
+                    </div>
+
+                    <div class="letter-seal">
+                        <span>❤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- BIRTHDAY CAKE SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="cake" class="cake-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll" data-animation="fadeUp">
+                <span class="section-tag">🎂 Make a Wish</span>
+                <h2 class="section-title">Blow the Candles, Maa!</h2>
+                <p class="section-subtitle hindi-text">मोमबत्तियाँ बुझाइए और मन्नत माँगिए!</p>
+            </div>
+
+            <div class="cake-container animate-on-scroll" data-animation="scaleIn">
+                <div class="cake-wrapper" id="cake-wrapper">
+                    <!-- CSS Cake -->
+                    <div class="cake">
+                        <div class="cake-tier tier-top">
+                            <div class="candles">
+                                <div class="candle"><div class="flame" id="flame1"></div></div>
+                                <div class="candle"><div class="flame" id="flame2"></div></div>
+                                <div class="candle"><div class="flame" id="flame3"></div></div>
+                                <div class="candle"><div class="flame" id="flame4"></div></div>
+                                <div class="candle"><div class="flame" id="flame5"></div></div>
+                            </div>
+                            <div class="frosting"></div>
+                        </div>
+                        <div class="cake-tier tier-middle">
+                            <div class="frosting"></div>
+                            <div class="cake-decoration">
+                                <span>🌹</span><span>💕</span><span>🌹</span><span>💕</span><span>🌹</span>
+                            </div>
+                        </div>
+                        <div class="cake-tier tier-bottom">
+                            <div class="frosting"></div>
+                            <div class="cake-text">Happy Birthday Maa!</div>
+                        </div>
+                        <div class="cake-plate"></div>
+                    </div>
+                    
+                    <button class="blow-btn" id="blow-btn" onclick="blowCandles()">
+                        🎂 Click to Blow Candles! 🎂
+                    </button>
+                    <div class="wish-message" id="wish-message">
+                        <h3>🎉 Happy Birthday Maa! 🎉</h3>
+                        <p class="hindi-text">जन्मदिन मुबारक हो! सारी ख़ुशियाँ आपकी हों! 🥳</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- WISHES SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="wishes" class="wishes-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll" data-animation="fadeUp">
+                <span class="section-tag">🌟 Birthday Wishes</span>
+                <h2 class="section-title">Heartfelt Wishes for You</h2>
+                <p class="section-subtitle hindi-text">दिल से कुछ दुआएँ</p>
+            </div>
+
+            <div class="wishes-grid">
+                <div class="wish-card animate-on-scroll" data-animation="fadeUp" style="--card-color: #b76e79;">
+                    <div class="wish-emoji">🙏</div>
+                    <p class="hindi-text">भगवान करे आपकी हर मनोकामना पूरी हो।</p>
+                    <p>May God fulfill every wish you hold in your heart.</p>
+                </div>
+                <div class="wish-card animate-on-scroll" data-animation="fadeUp" style="--delay: 0.15s; --card-color: #c9929c;">
+                    <div class="wish-emoji">💐</div>
+                    <p class="hindi-text">आपकी ज़िन्दगी में हमेशा बहार रहे।</p>
+                    <p>May spring forever bloom in your life.</p>
+                </div>
+                <div class="wish-card animate-on-scroll" data-animation="fadeUp" style="--delay: 0.3s; --card-color: #d4af37;">
+                    <div class="wish-emoji">✨</div>
+                    <p class="hindi-text">आप हमेशा ख़ुश रहें, हमेशा मुस्कुराती रहें।</p>
+                    <p>May you always be happy, may you always smile.</p>
+                </div>
+                <div class="wish-card animate-on-scroll" data-animation="fadeUp" style="--delay: 0.45s; --card-color: #8b5e6b;">
+                    <div class="wish-emoji">🌹</div>
+                    <p class="hindi-text">आपकी सेहत, ख़ुशी और तरक़्क़ी हमेशा बनी रहे।</p>
+                    <p>May your health, happiness, and prosperity always endure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer id="footer" class="footer-section">
+        <div class="footer-content">
+            <div class="footer-hearts">
+                <span>💕</span><span>💕</span><span>💕</span>
+            </div>
+            <p class="footer-message hindi-text">
+                माँ, आप मेरी दुनिया हो। आपसे ज़्यादा मुझे कोई प्यारा नहीं। ❤️
+            </p>
+            <p class="footer-message-en">
+                Maa, you are my world. No one is dearer to me than you. ❤️
+            </p>
+            <div class="footer-signature">
+                <p>Made with all my ❤️ by</p>
+                <p class="signature-name">Atharv Mehta</p>
+            </div>
+            <div class="footer-year">
+                <p>🎂 30th June 2026 🎂</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CONFETTI CANVAS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
